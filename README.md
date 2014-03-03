@@ -1,4 +1,4 @@
-rdio_player
+Rdio Player
 ===========
 
-Node-webkit rdio_player
+Node-webkit wrapper for http://www.rdio.com.
