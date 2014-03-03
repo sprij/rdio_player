@@ -15,8 +15,8 @@ win.on('close', function() {this.hide();});
 var exitItem = new gui.MenuItem({
     label: 'Exit', 
     click: function() {
-		// forces closing the window
-        win.close(true);
+	// forces closing the window
+	win.close(true);
     }
 });
 var menu = new gui.Menu();
@@ -25,6 +25,6 @@ menu.append(exitItem);
 // Define the tray to focus on the App when click and have an exit menu
 var manifest = gui.App.manifest;
 var tray = new gui.Tray({ title: manifest.window.name, 
-						  icon: manifest.window.icon});
+			  icon: manifest.window.icon});
 tray.on('click', function() {win.focus();});
 tray.menu = menu;
